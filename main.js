@@ -2,7 +2,7 @@
 //Pringles in console:
 console.log("Starting JS...");
 
-//excersize 1-2-3:
+//exercise 1-2-3:
 var myName = "Julia Wilhelm";
 console.log(myName);
 
@@ -13,7 +13,7 @@ var ignasiAge = 32;
 var ageDiff = age - ignasiAge;
 console.log(ageDiff);
 
-//excersize 4:
+//exercise 4:
 if (age > 21) {
     console.log("You are older than 21.");
 } else if (age < 21) {
@@ -22,7 +22,7 @@ if (age > 21) {
     console.log("You are 21 years old.");
 }
 
-//excersize 5:
+//exercise 5:
 if (age > ignasiAge) {
     console.log("You are older than Ignasi.");
 } else if (age < ignasiAge) {
@@ -42,7 +42,7 @@ console.log(lst.length);
 console.log(lst.indexOf(5));
 console.log(lst.join("-"));
 
-//Array excersize 1:
+//Array exercise 1:
 var myClass = ['Annamari', 'Bogi', 'Csilla', 'Dani', 'Emese', 'Fanni', 'Georgina', 'Heni', 'Vica'];
 
 
@@ -53,7 +53,7 @@ for (i = 0; i < myClass.length; i++) {
     console.log(myClass[i]);
 };
 
-//Array excersize 2:
+//Array exercise 2:
 var myClassAges = [25, 25, 30, 32, 19, 20, 27, 27, 31];
 var a = 0;
 var evenAges = [];
@@ -69,7 +69,7 @@ for (i = 0; i < myClassAges.length; i++) {
     };
 };
 
-//Array excersize 3:
+//Array exercise 3:
 var list01 = [4, 6, 7, 8, 3, 7, 10, 22, 1, 7];
 var list02 = [5, 4, 3, 2, 100, 55, 6];
 var list03 = [33, 44, 66, 77, 102, 31, 45];
@@ -86,7 +86,7 @@ console.log(lowestNo(list01));
 console.log(lowestNo(list02));
 console.log(lowestNo(list03));
 
-//Array excersize 4:
+//Array exercise 4:
 function biggestNo(givenList) {
     //The .sort() function vould order int.s like 1,10,2,20,etc. so I used a Compare Function (function(a, b){return a - b}) to define an alternative sor order. 
     var sortedList = givenList.sort(function (a, b) {
@@ -99,7 +99,7 @@ console.log(biggestNo(list01));
 console.log(biggestNo(list02));
 console.log(biggestNo(list03));
 
-//Array excersize 5:
+//Array exercise 5:
 var list04 = [3, 6, 67, 6, 23, 11, 100, 8, 93, 0, 17, 24, 7, 1, 33, 45, 28, 33, 23, 12, 99, 100];
 var index = 10;
 
@@ -109,7 +109,7 @@ function arrayFunction(givenList, givenIndex) {
 
 console.log(arrayFunction(list04, index));
 
-//Array excersize 6:
+//Array exercise 6:
 var list05 = [3, 6, 67, 6, 23, 11, 100, 8, 93, 0, 17, 24, 7, 1, 33, 45, 28, 33, 23, 12, 99, 100];
 
 function multiplicationsInArray(givenList) {
@@ -128,7 +128,7 @@ function multiplicationsInArray(givenList) {
 
 console.log(multiplicationsInArray(list05));
 
-//Array excersize 6:
+//Array exercise 6:
 myColor = ["Red", "Green", "White", "Black"];
 
 function youNeedThisInString(givenList) {
@@ -139,7 +139,7 @@ console.log(youNeedThisInString(myColor));
 
 console.log("**String Func ********************");
 // JAVASCRIPT STRING FUNCTIONS
-// excersize 1:
+// exercise 1:
 var x = 4569;
 
 function reversing(givenNumber) {
@@ -148,7 +148,7 @@ function reversing(givenNumber) {
 
 console.log(reversing(x));
 
-// excersize 2:
+// exercise 2:
 var y = 'idontknow';
 
 function revString(givenString) {
@@ -157,7 +157,7 @@ function revString(givenString) {
 
 console.log(revString(y));
 
-// excersize 3:
+// exercise 3:
 var z = 'prince of persia';
 
 function capitalizeFirstLetters(givenString) {
@@ -172,7 +172,7 @@ function capitalizeFirstLetters(givenString) {
 
 console.log(capitalizeFirstLetters(z));
 
-// excersize 4:
+// exercise 4:
 var lastone = "Last Feast Of The Wolves";
 
 function longestWord(givenString){
