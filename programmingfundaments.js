@@ -108,8 +108,74 @@ console.log("Sorted array #1:");
 console.log(newArray03);
 console.log(newArray04);
 
-// 8.
+// 8. sorting the minimum and maximum number:
+var exampleArray04 = [2, 3, 4, 1, 5, 10, 6, 7, 8, 11, 9];
+var minNumber = exampleArray04[0];
+var maxNumber = exampleArray04[0];
 
-// 9.
+for (i = 0; i < exampleArray04.length; i++) {
+    if (exampleArray04[i] < minNumber) {
+        minNumber = exampleArray04[i];
+    }
+};
 
-// 10.
+for (i = 0; i < exampleArray04.length; i++) {
+    if (exampleArray04[i] > maxNumber) {
+        maxNumber = exampleArray04[i];
+    }
+};
+
+
+//Checking:
+console.log("The min number in the array is " + minNumber);
+console.log("The max number in the array is " + maxNumber);
+
+// 9. intersect:
+var exampleArray05 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+var size01 = exampleArray05.length;
+var exampleArray06 = [10, 2, 30, 5, 66, 7, 99, 10];
+var size02 = exampleArray06.length;
+var arrayWintersects = [];
+
+var j;
+var k = 0;
+
+for (i = 0; i < size01; i++) {
+    j = 0;
+    while (exampleArray05[i] != exampleArray06[j] && j < size02)
+        j++;
+
+    if (j < size02)
+        arrayWintersects[k++] = exampleArray05[i]
+}
+
+// Checking:
+console.log(arrayWintersects);
+
+// 10. unio:
+var exampleArray07 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+var size03 = exampleArray05.length;
+var exampleArray08 = [10, 20, 30, 50, 66, 70, 99, 100];
+var size04 = exampleArray06.length;
+var unioArray = [];
+
+var l=0;
+
+for (i = 0; i < size03; i++) {
+    unioArray[l++]=exampleArray07[i];
+}
+
+var m = size03;
+
+for (j=0; j < size04; j++){
+    i=0;
+    while (i < size03 && exampleArray08[j] != exampleArray07[i]){
+        i++;
+    }
+    if (i >= m){
+        unioArray[l++]=exampleArray08[j];
+    };
+};
+
+// Checking:
+console.log(unioArray);
